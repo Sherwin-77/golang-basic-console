@@ -75,7 +75,7 @@ func mathOperation(input *bufio.Reader, mathHistory *[]string) {
 	var firstNumber float32 = readFloat32(input, "Input first number: ")
 	var secondNumber float32 = readFloat32(input, "Input second number: ")
 
-	fmt.Println("Input operator (+, -, *, /): ")
+	fmt.Print("Input operator (+, -, *, /): ")
 	var operator string
 	var result float32
 	// Loop until valid operator is inputted
@@ -93,7 +93,7 @@ func mathOperation(input *bufio.Reader, mathHistory *[]string) {
 		case "/":
 			result = firstNumber / secondNumber
 		default:
-			fmt.Println("Invalid operator. Please input a valid operator (+, -, *, /):")
+			fmt.Print("Invalid operator. Please input a valid operator (+, -, *, /):")
 			continue
 		}
 		break
